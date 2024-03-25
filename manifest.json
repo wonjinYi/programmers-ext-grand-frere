@@ -1,0 +1,32 @@
+{
+    "name": "프로그래머스_제출기록_전송",
+    "description": "아무튼 동작함",
+    "version": "0.0.2",
+    "manifest_version": 3,
+    "permissions" : [
+        "storage", "tabs"
+    ],
+    "background": {
+
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts" : [
+        {
+            "matches":["https://school.programmers.co.kr/learn/courses/30/*"],
+            "js":["contentScript.js"],
+            "all_frames" : true
+        }
+    ],
+    "web_accessible_resources": [ 
+        {
+            "resources": [ 
+                "main.js",
+                "libraries/goraniStore/src/goraniStore.js",
+                "tools/*"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
