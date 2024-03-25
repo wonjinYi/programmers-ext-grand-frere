@@ -1,2 +1,2 @@
-# cateye
-SuperbAI Suite에서 OCR 데이터를 빠르고 편리하게 검사하기 위한 크롬확장프로그램입니다.
+# grand-frere : programmers 기록 전송용 크롬 확장프로그램
+감사합니다 : https://github.com/BaekjoonHub
