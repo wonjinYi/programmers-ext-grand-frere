@@ -142,7 +142,9 @@ export const main = () => {
                 alert('기능이 ' + (is_enabled.get() ? '활성화' : '비활성화') + '되었습니다.');
                 if(is_enabled.get()) {
                     startLoader();
-                } 
+                }  else {
+                    stopLoader();
+                }
             } else {
                 if (e.key === 's' || e.key === 'S') {
                     const str = user_id.get();
